@@ -18,6 +18,9 @@
 
 .cards .cards-card-image {
   line-height: 0;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .cards > ul > li img {
