@@ -20,8 +20,8 @@
 .cards .cards-card-image {
   line-height: 0;
   overflow: hidden;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .cards > ul > li img {
