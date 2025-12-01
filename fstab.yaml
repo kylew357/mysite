@@ -1,2 +1,4 @@
 mountpoints:
-  /: https://drive.google.com/drive/folders/1j9u-GncaAggsw0svqP09n8TI7cp899hQ
+  /: 
+    url: https://content.da.live/kylew357/mysite/
+    type: markup
