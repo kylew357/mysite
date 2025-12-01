@@ -1,0 +1,139 @@
+.countdown-timer {
+  background: linear-gradient(135deg, #ff6b6b 0%, #c92a2a 100%);
+  border-radius: 20px;
+  padding: 40px 20px;
+  box-shadow: 0 10px 40px rgb(0 0 0 / 20%);
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+}
+
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.countdown-unit {
+  background: rgb(255 255 255 / 10%);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 15px 10px;
+  min-width: 70px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.countdown-unit:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgb(0 0 0 / 20%);
+}
+
+.countdown-value {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
+}
+
+.countdown-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.countdown-separator {
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0.7;
+  margin: 0 2px;
+}
+
+.countdown-message {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
+}
+
+.countdown-message.countdown-ended {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.countdown-error {
+  color: #ff6b6b;
+  background: rgb(255 255 255 / 90%);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive design */
+@media (width <= 768px) {
+  .countdown-timer {
+    padding: 30px 15px;
+  }
+
+  .countdown-unit {
+    min-width: 70px;
+    padding: 15px;
+  }
+
+  .countdown-value {
+    font-size: 32px;
+  }
+
+  .countdown-label {
+    font-size: 12px;
+  }
+
+  .countdown-separator {
+    font-size: 28px;
+  }
+
+  .countdown-message {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+}
+
+@media (width <= 480px) {
+  .countdown-container {
+    gap: 5px;
+  }
+
+  .countdown-unit {
+    min-width: 60px;
+    padding: 10px;
+  }
+
+  .countdown-value {
+    font-size: 24px;
+  }
+
+  .countdown-separator {
+    font-size: 20px;
+    margin: 0 2px;
+  }
+}
+
