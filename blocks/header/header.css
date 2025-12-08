@@ -227,6 +227,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
+    color: #0766d1;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
