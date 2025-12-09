@@ -64,3 +64,17 @@
   margin-left: auto;
   margin-right: auto;
 }
+.frosted-blur {
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.93;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 1) 65%);
+    z-index: -1;
+  }
+}
