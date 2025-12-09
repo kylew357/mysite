@@ -10,11 +10,33 @@
 }
 
 .hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--text-color);
-  font-size: 72px;
+  font-size: 42px;
+}
+
+.hero h2 {
+  font-size: 22px;
+}
+
+
+@media (width >=765px) {
+  .hero h1 {
+    width: 40%;
+    float: left;
+    color: var(--text-color);
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    width: 40%;
+    color: var(--text-color);
+    font-size: 22px;
+  }
+
+  .hero.block>div {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .hero picture {
