@@ -44,6 +44,8 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
 }
 
