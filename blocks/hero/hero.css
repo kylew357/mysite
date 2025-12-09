@@ -9,7 +9,7 @@
   min-height: 500px;
 }
 .hero.block {
-  dislay: flex;
+  display: flex;
   align-items: center;
 }
 
