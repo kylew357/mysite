@@ -6,15 +6,22 @@
 .hero {
   position: relative;
   padding: 40px 24px;
-  min-height: 300px;
+  min-height: 500px;
+}
+.hero.block {
+  dislay: flex;
+  align-items: center;
 }
 
 .hero h1 {
   font-size: 42px;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .hero h2 {
   font-size: 22px;
+  margin-bottom: 30px
 }
 
 
@@ -34,6 +41,7 @@
 
   .hero.block>div {
     max-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
